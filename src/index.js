@@ -13,8 +13,8 @@ const Layout = () => {
 
   useEffect(() => {
     loadCommonElements(
-      'https://devbanca.tataaig.com/banca/common/elements',
-      'https://devbanca.tataaig.com/banca/common/common_new.css',
+      '',
+      '',
       'newProject.css'
     );
   }, []);
