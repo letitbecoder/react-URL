@@ -26,17 +26,9 @@
     -->
     <title>React App</title>
     <script>
-      // Get the current URL
-      var currentUrl = window.location.href;
-      
-      // Specify the custom path
-      var customPath = '/mycustompath';
-      
-      // Redirect to the custom path if not already there
-      if (!currentUrl.includes(customPath)) {
-        window.location.href = currentUrl + customPath;
-      }
-    </script>
+    var baseUrl = 'https://devbanca.tataaig.com/mycustomurl';
+    document.write('<base href="' + baseUrl + '" />');
+  </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
