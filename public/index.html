@@ -25,6 +25,18 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script>
+      // Get the current URL
+      var currentUrl = window.location.href;
+      
+      // Specify the custom path
+      var customPath = '/mycustompath';
+      
+      // Redirect to the custom path if not already there
+      if (!currentUrl.includes(customPath)) {
+        window.location.href = currentUrl + customPath;
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
